@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shopping Mall Bot</title>
+        <meta name="description" content="Shopping mall bot for access control">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1>Best Shopping Mall</h1>
+        <main>
+            <section>
+                <div>
+                    <h3>please fill this form to gain access</h3>
+                    <form>
+                        <label for="age"></label>
+                        <input type="number" class="age" id="age" placeholder="Enter your age">
+                        <div class="error">
+                            <span>please enter a valid age</span>
+                        </div>
+                        <div class="mask">
+                            <p>are you wearing a face mask?</p>
+                            <select name="mask" id="mask" class="facemask">
+                                <option value="yes">Yes, I am wearing a face mask, <span class="icon">&#128567;</span></option>
+                                <option value="no">No, I am not wearing a face mask, <span class="icon">&#128528;</span></option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" class="enter">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="count">
+                <div class="allowed">
+                    <h4>Visitors allowed</h4>
+                    <span class="icon">&#128567;</span>
+                    <span class="allowedCount"></span>
+                </div>
+                <div class="not-allowed">
+                    <h4>Visitors Not-allowed</h4>
+                    <span class="icon">&#128528;</span>
+                    <span class="not-allowedCount"></span>
+                </div>
+            </section>
+        </main>
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
