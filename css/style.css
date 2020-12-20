@@ -79,3 +79,7 @@ p {
 .not-allowed {
     color: red;
 }
+.clock {
+    margin: 1rem;
+    color: red;
+}
