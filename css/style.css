@@ -25,7 +25,8 @@ form {
     width: 100%;
 }
 input {
-    width: 100%;
+    width: 20rem;
+    max-width: 90%;
     padding: 0.5rem;
     border: 2px solid #333333;
     border-radius: 0;
@@ -55,14 +56,15 @@ input {
     padding: 0.5rem 0;
 }
 .mask {
-    text-align: justify;
+    text-align: center;
     margin: 1rem 0;
 }
-p {
+.mask p {
     margin-bottom: 0.3rem;
 }
 .facemask {
-    width: 100%;
+    width: 20rem;
+    max-width: 80%;
     padding: 0.5rem;
     border: 2px solid #333333;
     outline: none;
@@ -72,6 +74,11 @@ p {
 .count {
     margin: 1rem;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
 }
 .allowed {
     color: green;
@@ -79,7 +86,14 @@ p {
 .not-allowed {
     color: red;
 }
+
 .clock {
     margin: 1rem;
     color: red;
+}
+@media only screen and (max-width: 799px){
+    .count {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
