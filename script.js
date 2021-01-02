@@ -46,8 +46,10 @@ const checkVisitor = () => {
     if(ageInput.value === ""){
         errormessage.classList.remove("error");
         errormessage.classList.add("show");
+        ageInput.classList.add("errorInput");
         setTimeout(() => {
             errormessage.classList.remove("show");
+            ageInput.classList.remove("errorInput");
             errormessage.classList.add("error");
         }, 3000);
     } else {
