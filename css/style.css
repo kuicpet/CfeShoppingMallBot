@@ -21,6 +21,9 @@ main {
     text-transform: capitalize;
     margin: 2rem;
 }
+h1 {
+    padding: 1rem;
+}
 form {
     width: 100%;
 }
@@ -33,7 +36,7 @@ input {
     margin: 1rem 0;
 }
 .enter {
-    width: 20%;
+    width: 10rem;
     padding: 0.5rem;
     border: 2px solid #333333;
     font-weight: bold;
@@ -90,6 +93,7 @@ input {
 .clock {
     margin: 1rem;
     color: red;
+    font-weight: bold;
 }
 @media only screen and (max-width: 799px){
     .count {
